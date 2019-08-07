@@ -79,16 +79,12 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="hGc-KE-Chx" id="zQp-K9-4mm"/>
-                            <outlet property="delegate" destination="hGc-KE-Chx" id="nVc-dW-bD6"/>
-                        </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="TableView2" image="list" id="Dw2-mD-6z0"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nL1-vZ-Dqj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="780" y="0.0"/>
+            <point key="canvasLocation" x="779.71014492753625" y="0.0"/>
         </scene>
     </scenes>
     <resources>

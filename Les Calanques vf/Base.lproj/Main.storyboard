@@ -179,10 +179,46 @@
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wYh-NR-22l" customClass="mapView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wYh-NR-22l" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="LWS-aa-lak"/>
+                            <constraint firstItem="wYh-NR-22l" firstAttribute="bottom" secondItem="O1u-W8-tvY" secondAttribute="bottom" id="Zrv-Sb-i81"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="wYh-NR-22l" secondAttribute="trailing" id="krY-aC-DrB"/>
+                            <constraint firstItem="wYh-NR-22l" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="tgS-fU-Z8Y"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="4dz-xU-ubI"/>
+                    <navigationItem key="navigationItem" id="4dz-xU-ubI">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="wgw-KC-cA6">
+                            <rect key="frame" x="101" y="7.5" width="212" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="27" id="xHq-RK-Jgk"/>
+                            </constraints>
+                            <segments>
+                                <segment title="Standard"/>
+                                <segment title="Satelitte"/>
+                                <segment title="Hybrid"/>
+                            </segments>
+                            <connections>
+                                <action selector="segementedChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="KKz-LX-lvc"/>
+                            </connections>
+                        </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="placeholder" id="Rdk-gs-Npa">
+                            <connections>
+                                <action selector="getPosition:" destination="8rJ-Kc-sve" id="EyG-lq-1G5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="wYh-NR-22l" id="jrt-YW-cv2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -503,6 +539,7 @@
         <image name="earth" width="32" height="32"/>
         <image name="list" width="32" height="32"/>
         <image name="oeil" width="640" height="480"/>
+        <image name="placeholder" width="32" height="32"/>
         <image name="port pin" width="1024" height="684"/>
         <image name="sugiton" width="1600" height="896"/>
     </resources>

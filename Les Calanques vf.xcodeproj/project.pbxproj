@@ -11,6 +11,7 @@
 		E2AA39DF22F6EF1B007B6245 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2AA39DD22F6EF1B007B6245 /* Main.storyboard */; };
 		E2AA39E122F6EF1C007B6245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2AA39E022F6EF1C007B6245 /* Assets.xcassets */; };
 		E2AA39E422F6EF1C007B6245 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2AA39E222F6EF1C007B6245 /* LaunchScreen.storyboard */; };
+		E2AAAEE322FB5EB400DBA1ED /* CalanqueCellAlternative.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AAAEE222FB5EB400DBA1ED /* CalanqueCellAlternative.swift */; };
 		E2CF44A722FAD2E800D9E948 /* Calanques.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CF44A622FAD2E800D9E948 /* Calanques.swift */; };
 		E2CF44A922FAD5A600D9E948 /* CalanqueCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CF44A822FAD5A600D9E948 /* CalanqueCollection.swift */; };
 		E2CF44AB22FAD78F00D9E948 /* ControllerAvecTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CF44AA22FAD78F00D9E948 /* ControllerAvecTableView.swift */; };
@@ -27,6 +28,7 @@
 		E2AA39E022F6EF1C007B6245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2AA39E322F6EF1C007B6245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2AA39E522F6EF1C007B6245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2AAAEE222FB5EB400DBA1ED /* CalanqueCellAlternative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueCellAlternative.swift; sourceTree = "<group>"; };
 		E2CF44A622FAD2E800D9E948 /* Calanques.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calanques.swift; sourceTree = "<group>"; };
 		E2CF44A822FAD5A600D9E948 /* CalanqueCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueCollection.swift; sourceTree = "<group>"; };
 		E2CF44AA22FAD78F00D9E948 /* ControllerAvecTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerAvecTableView.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				E2CF44B222FAE1F900D9E948 /* CalanqueCell.swift */,
 				E2CF44B422FAEDC700D9E948 /* ImageRonde.swift */,
+				E2AAAEE222FB5EB400DBA1ED /* CalanqueCellAlternative.swift */,
 			);
 			path = Vue;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				E2CF44B322FAE1F900D9E948 /* CalanqueCell.swift in Sources */,
 				E2CF44A922FAD5A600D9E948 /* CalanqueCollection.swift in Sources */,
 				E2CF44AD22FAD7AE00D9E948 /* ControllerAvecCarte.swift in Sources */,
+				E2AAAEE322FB5EB400DBA1ED /* CalanqueCellAlternative.swift in Sources */,
 				E2CF44AB22FAD78F00D9E948 /* ControllerAvecTableView.swift in Sources */,
 				E2CF44B522FAEDC700D9E948 /* ImageRonde.swift in Sources */,
 				E2CF44A722FAD2E800D9E948 /* Calanques.swift in Sources */,

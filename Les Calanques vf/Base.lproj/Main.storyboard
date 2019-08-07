@@ -270,7 +270,13 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" id="ZGU-CN-FbA"/>
+                    <navigationItem key="navigationItem" id="ZGU-CN-FbA">
+                        <barButtonItem key="rightBarButtonItem" title="Reload" id="ZbV-gh-e8g">
+                            <connections>
+                                <action selector="reloadAction:" destination="hGc-KE-Chx" id="yeh-fx-ekk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="8VF-Ek-Wbk" kind="show" identifier="Detail" id="FAz-2X-Ddd"/>
                     </connections>

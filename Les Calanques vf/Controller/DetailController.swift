@@ -34,7 +34,6 @@ class DetailController: UIViewController {
         nomEtDesc.textAlignment = .center
     }
     
-
     /*
     // MARK: - Navigation
 

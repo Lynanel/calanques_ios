@@ -155,7 +155,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <navigationItem key="navigationItem" id="yVr-Oz-lQ7"/>
+                    <navigationItem key="navigationItem" id="yVr-Oz-lQ7">
+                        <barButtonItem key="rightBarButtonItem" title="Reload" id="HQC-95-cfY">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="reloadAction:" destination="9pv-A4-QxB" id="Tu9-6N-IGd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="oNH-Bu-rJY" id="Pl6-vt-1ko"/>
                         <segue destination="8VF-Ek-Wbk" kind="show" identifier="Detail" id="bS6-aR-DVy"/>
@@ -392,6 +399,6 @@
         <image name="port pin" width="1024" height="684"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FAz-2X-Ddd"/>
+        <segue reference="bS6-aR-DVy"/>
     </inferredMetricsTieBreakers>
 </document>

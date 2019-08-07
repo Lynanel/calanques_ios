@@ -16,7 +16,11 @@ class TableViewIntegreeController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         calanques = CalanqueCollection().all()
-        
+        tableView.backgroundColor = UIColor.clear
+        let bg = UIImageView(frame: view.bounds)
+        bg.image = calanques[0].image
+        bg.contentMode = .scaleAspectFill
+        tableView.backgroundView = bg
     }
 
     // MARK: - Table view data source

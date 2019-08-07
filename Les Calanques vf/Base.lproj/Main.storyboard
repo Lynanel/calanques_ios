@@ -78,6 +78,57 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CalanqueCell" rowHeight="206" id="cCk-eu-7VA" customClass="CalanqueCell" customModule="Les_Calanques_vf" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="414" height="206"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cCk-eu-7VA" id="PMM-o5-40L">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="205.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d9E-Qp-34O" customClass="ImageRonde" customModule="Les_Calanques_vf" customModuleProvider="target">
+                                            <rect key="frame" x="8" y="40.5" width="125" height="125"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="125" id="64R-VY-TDv"/>
+                                                <constraint firstAttribute="width" constant="125" id="bPs-Rn-Dzw"/>
+                                            </constraints>
+                                        </imageView>
+                                        <view opaque="NO" clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2cz-Nn-veM">
+                                            <rect key="frame" x="0.0" y="105.5" width="414" height="100"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="jne-An-Jkj">
+                                                    <rect key="frame" x="150" y="8" width="256" height="84"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="jne-An-Jkj" firstAttribute="leading" secondItem="2cz-Nn-veM" secondAttribute="leading" constant="150" id="5OP-DY-dTQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="jne-An-Jkj" secondAttribute="bottom" constant="8" id="6SL-hg-Di3"/>
+                                                <constraint firstAttribute="trailing" secondItem="jne-An-Jkj" secondAttribute="trailing" constant="8" id="IkR-XM-GoQ"/>
+                                                <constraint firstAttribute="height" constant="100" id="UaB-w6-IGl"/>
+                                                <constraint firstItem="jne-An-Jkj" firstAttribute="top" secondItem="2cz-Nn-veM" secondAttribute="top" constant="8" id="VSZ-Sy-ygy"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="2cz-Nn-veM" firstAttribute="leading" secondItem="PMM-o5-40L" secondAttribute="leading" id="3Hb-La-mxZ"/>
+                                        <constraint firstAttribute="trailing" secondItem="2cz-Nn-veM" secondAttribute="trailing" id="4oT-u3-GCr"/>
+                                        <constraint firstItem="d9E-Qp-34O" firstAttribute="centerY" secondItem="PMM-o5-40L" secondAttribute="centerY" id="840-kc-6Sk"/>
+                                        <constraint firstAttribute="bottom" secondItem="2cz-Nn-veM" secondAttribute="bottom" id="Q1c-oQ-C5g"/>
+                                        <constraint firstItem="d9E-Qp-34O" firstAttribute="leading" secondItem="PMM-o5-40L" secondAttribute="leading" constant="8" id="mgA-ex-2kY"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="CalanqueIV" destination="d9E-Qp-34O" id="WWl-RW-QFw"/>
+                                    <outlet property="ContainerView" destination="2cz-Nn-veM" id="TyU-eN-gpx"/>
+                                    <outlet property="nomLabel" destination="jne-An-Jkj" id="eld-eN-2t8"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="TableView2" image="list" id="Dw2-mD-6z0"/>

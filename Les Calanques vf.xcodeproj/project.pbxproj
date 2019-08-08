@@ -22,6 +22,7 @@
 		E2CF44AF22FAD80300D9E948 /* TableViewIntegreeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CF44AE22FAD80300D9E948 /* TableViewIntegreeController.swift */; };
 		E2CF44B322FAE1F900D9E948 /* CalanqueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CF44B222FAE1F900D9E948 /* CalanqueCell.swift */; };
 		E2CF44B522FAEDC700D9E948 /* ImageRonde.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CF44B422FAEDC700D9E948 /* ImageRonde.swift */; };
+		E2F7876E22FC454500F2FFEE /* MonAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F7876D22FC454500F2FFEE /* MonAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		E2CF44B122FADBCB00D9E948 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		E2CF44B222FAE1F900D9E948 /* CalanqueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueCell.swift; sourceTree = "<group>"; };
 		E2CF44B422FAEDC700D9E948 /* ImageRonde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRonde.swift; sourceTree = "<group>"; };
+		E2F7876D22FC454500F2FFEE /* MonAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				E2CF44B422FAEDC700D9E948 /* ImageRonde.swift */,
 				E2AAAEE222FB5EB400DBA1ED /* CalanqueCellAlternative.swift */,
 				E2AAAEE622FB833000DBA1ED /* Boutton_arrondi.swift */,
+				E2F7876D22FC454500F2FFEE /* MonAnnotationView.swift */,
 			);
 			path = Vue;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			files = (
 				E2CF44AF22FAD80300D9E948 /* TableViewIntegreeController.swift in Sources */,
 				E2AA39D822F6EF1B007B6245 /* AppDelegate.swift in Sources */,
+				E2F7876E22FC454500F2FFEE /* MonAnnotationView.swift in Sources */,
 				E2CF44B322FAE1F900D9E948 /* CalanqueCell.swift in Sources */,
 				E2AAAEE922FB93B500DBA1ED /* MonAnnotation.swift in Sources */,
 				E2CF44A922FAD5A600D9E948 /* CalanqueCollection.swift in Sources */,

@@ -80,7 +80,7 @@
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Np-7p-hfq">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="60"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="60" id="4UG-OJ-P5x"/>
                                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="J1E-hZ-XS5"/>
@@ -91,9 +91,13 @@
                                                                         </label>
                                                                     </subviews>
                                                                     <constraints>
+                                                                        <constraint firstItem="7Np-7p-hfq" firstAttribute="leading" secondItem="cgX-hm-Odn" secondAttribute="leading" id="J2a-hg-hqK"/>
+                                                                        <constraint firstAttribute="bottom" secondItem="7Np-7p-hfq" secondAttribute="bottom" id="LLH-f1-5iu"/>
                                                                         <constraint firstItem="7Np-7p-hfq" firstAttribute="leading" secondItem="cgX-hm-Odn" secondAttribute="leading" id="N41-RZ-2zP"/>
+                                                                        <constraint firstItem="7Np-7p-hfq" firstAttribute="top" secondItem="cgX-hm-Odn" secondAttribute="top" id="XdG-bY-8Yd"/>
                                                                         <constraint firstItem="7Np-7p-hfq" firstAttribute="top" secondItem="cgX-hm-Odn" secondAttribute="top" id="aOV-ly-KXE"/>
                                                                         <constraint firstAttribute="bottom" secondItem="7Np-7p-hfq" secondAttribute="bottom" id="rWn-e9-1kX"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="7Np-7p-hfq" secondAttribute="trailing" id="saL-Ac-Zbb"/>
                                                                         <constraint firstItem="7Np-7p-hfq" firstAttribute="centerY" secondItem="cgX-hm-Odn" secondAttribute="centerY" id="vGe-e5-f3W"/>
                                                                     </constraints>
                                                                 </view>
@@ -198,9 +202,6 @@
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="wgw-KC-cA6">
                             <rect key="frame" x="101" y="7.5" width="212" height="29"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="27" id="xHq-RK-Jgk"/>
-                            </constraints>
                             <segments>
                                 <segment title="Standard"/>
                                 <segment title="Satelitte"/>
@@ -243,12 +244,6 @@
                                     <constraint firstAttribute="height" constant="175" id="CuJ-wJ-ABD"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Un coin de paradis en plein coeur de la métropole marseilleuse" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="21" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zYn-T7-Vhp">
-                                <rect key="frame" x="20" y="269" width="374" height="543"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="29"/>
-                                <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Nc-Rg-SED" customClass="Boutton_arrondi" customModule="Les_Calanques_vf" customModuleProvider="target">
                                 <rect key="frame" x="20" y="832" width="374" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -262,46 +257,7 @@
                                         <fragment content="Visitez les Calanques">
                                             <attributes>
                                                 <font key="NSFont" size="25" name="Chalkduster"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                    <tabStops>
-                                                        <textTab alignment="left" location="28">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="56">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="84">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="112">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="140">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="168">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="196">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="224">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="252">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="280">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="308">
-                                                            <options/>
-                                                        </textTab>
-                                                        <textTab alignment="left" location="336">
-                                                            <options/>
-                                                        </textTab>
-                                                    </tabStops>
-                                                </paragraphStyle>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -313,14 +269,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="iwI-wa-LM6" firstAttribute="trailing" secondItem="zYn-T7-Vhp" secondAttribute="trailing" constant="20" id="04l-0f-x9g"/>
                             <constraint firstItem="fsl-jB-o4R" firstAttribute="centerX" secondItem="he7-5M-Dat" secondAttribute="centerX" id="1Ed-0f-ecv"/>
                             <constraint firstItem="2Nc-Rg-SED" firstAttribute="bottom" secondItem="iwI-wa-LM6" secondAttribute="bottom" constant="20" id="7pS-av-dVY"/>
                             <constraint firstItem="iwI-wa-LM6" firstAttribute="trailing" secondItem="2Nc-Rg-SED" secondAttribute="trailing" constant="20" id="AnD-Df-4oY"/>
-                            <constraint firstItem="zYn-T7-Vhp" firstAttribute="top" secondItem="fsl-jB-o4R" secondAttribute="bottom" constant="20" id="IOb-bR-V1I"/>
                             <constraint firstItem="fsl-jB-o4R" firstAttribute="top" secondItem="iwI-wa-LM6" secondAttribute="top" constant="30" id="acU-73-U8t"/>
-                            <constraint firstItem="zYn-T7-Vhp" firstAttribute="leading" secondItem="iwI-wa-LM6" secondAttribute="leading" constant="20" id="hV4-Is-vhp"/>
-                            <constraint firstItem="2Nc-Rg-SED" firstAttribute="top" secondItem="zYn-T7-Vhp" secondAttribute="bottom" constant="20" id="hdP-Kj-hr7"/>
                             <constraint firstItem="2Nc-Rg-SED" firstAttribute="leading" secondItem="iwI-wa-LM6" secondAttribute="leading" constant="20" id="rMv-ye-rzt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iwI-wa-LM6"/>
@@ -376,7 +328,7 @@
                                         <view opaque="NO" clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2cz-Nn-veM">
                                             <rect key="frame" x="0.0" y="105.5" width="414" height="100"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="jne-An-Jkj">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="jne-An-Jkj">
                                                     <rect key="frame" x="150" y="8" width="256" height="84"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                     <nil key="textColor"/>
@@ -387,9 +339,14 @@
                                             <constraints>
                                                 <constraint firstItem="jne-An-Jkj" firstAttribute="leading" secondItem="2cz-Nn-veM" secondAttribute="leading" constant="150" id="5OP-DY-dTQ"/>
                                                 <constraint firstAttribute="bottom" secondItem="jne-An-Jkj" secondAttribute="bottom" constant="8" id="6SL-hg-Di3"/>
+                                                <constraint firstAttribute="bottom" secondItem="jne-An-Jkj" secondAttribute="bottom" constant="8" id="9j0-Km-7aD"/>
                                                 <constraint firstAttribute="trailing" secondItem="jne-An-Jkj" secondAttribute="trailing" constant="8" id="IkR-XM-GoQ"/>
+                                                <constraint firstItem="jne-An-Jkj" firstAttribute="centerY" secondItem="2cz-Nn-veM" secondAttribute="centerY" id="KGq-x9-CgK"/>
+                                                <constraint firstItem="jne-An-Jkj" firstAttribute="leading" secondItem="2cz-Nn-veM" secondAttribute="leading" constant="150" id="Sv2-XJ-zor"/>
                                                 <constraint firstAttribute="height" constant="100" id="UaB-w6-IGl"/>
                                                 <constraint firstItem="jne-An-Jkj" firstAttribute="top" secondItem="2cz-Nn-veM" secondAttribute="top" constant="8" id="VSZ-Sy-ygy"/>
+                                                <constraint firstAttribute="trailing" secondItem="jne-An-Jkj" secondAttribute="trailing" constant="8" id="fHh-AY-wdz"/>
+                                                <constraint firstItem="jne-An-Jkj" firstAttribute="top" secondItem="2cz-Nn-veM" secondAttribute="top" constant="8" id="n2u-sx-tcM"/>
                                             </constraints>
                                         </view>
                                         <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d9E-Qp-34O" customClass="ImageRonde" customModule="Les_Calanques_vf" customModuleProvider="target">
@@ -432,7 +389,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nL1-vZ-Dqj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1689.8550724637682" y="0.0"/>
+            <point key="canvasLocation" x="2600" y="0.0"/>
         </scene>
         <!--Detail Controller-->
         <scene sceneID="x3u-xn-dTH">
@@ -449,7 +406,7 @@
                                     <constraint firstAttribute="height" constant="200" id="wqW-N0-ie1"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Ce-K4-nJq">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="3Ce-K4-nJq">
                                 <rect key="frame" x="16" y="318" width="382" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -475,7 +432,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MLL-77-8eX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2460.8695652173915" y="-3.3482142857142856"/>
+            <point key="canvasLocation" x="3371.0144927536235" y="-3.3482142857142856"/>
         </scene>
         <!--TableView1-->
         <scene sceneID="8Gu-fk-MN1">
@@ -508,7 +465,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="hGc-KE-Chx" kind="relationship" relationship="rootViewController" id="NwD-9z-dI7"/>
+                        <segue destination="exL-uw-FHC" kind="relationship" relationship="rootViewController" id="NwD-9z-dI7"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBx-V7-Bf7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -533,6 +490,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SeI-F0-t4e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="747.82608695652175" y="768.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ikq-88-DVk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="exL-uw-FHC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="UnA-lF-Kly"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kXd-XA-uvA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hGc-KE-Chx" kind="relationship" relationship="rootViewController" id="1c4-Ad-rVh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Te8-vr-6aA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1689.8550724637682" y="0.0"/>
         </scene>
     </scenes>
     <resources>

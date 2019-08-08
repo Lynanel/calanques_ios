@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class MonAnnotation: NSObject, MKMapViewDelegate {
+class MonAnnotation: NSObject, MKAnnotation, MKMapViewDelegate {
     var coordinate: CLLocationCoordinate2D
     var calanque: Calanque
     var title: String?

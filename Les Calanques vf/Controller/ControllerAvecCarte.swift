@@ -9,14 +9,15 @@
 import UIKit
 import MapKit
 
-class ControllerAvecCarte: UIViewController {
+class ControllerAvecCarte: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     var calanques: [Calanque] = CalanqueCollection().all()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        mapView.delegate = self
+        addAnnotations()
         // Do any additional setup after loading the view.
     }
     
@@ -27,9 +28,32 @@ class ControllerAvecCarte: UIViewController {
             annotation.title = calanque.nom
             mapView.addAnnotation(annotation)*/
             
+            //Annoatation Custom
             let annotation = MonAnnotation(calanque)
-            mapView.addAnnotation(annotation as! MKAnnotation)
+            mapView.addAnnotation(annotation)
         }
+    }
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        let reuseIdentifier = "reuseID"
+        
+        //Vérifier que ce ne soit pas la position de l'utilisateur
+        if annotation.isKind(of: MKUserLocation.self) {
+            return nil
+        }
+        
+        if let anno = annotation as? MonAnnotation {
+            var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseIdentifier)
+            if annotationView == nil {
+                annotationView = MKAnnotationView(annotation: anno, reuseIdentifier: reuseIdentifier)
+                annotationView?.image = UIImage(named: "placeholder")
+                annotationView?.canShowCallout = true
+                return annotationView
+            } else {
+                return annotationView
+            }
+        }
+        return nil
     }
 
     @IBAction func getPosition(_ sender: Any) {

@@ -219,6 +219,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="wYh-NR-22l" id="jrt-YW-cv2"/>
+                        <segue destination="8VF-Ek-Wbk" kind="show" identifier="Detail" id="rA2-g1-YXM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -520,6 +521,6 @@
         <image name="sugiton" width="1600" height="896"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bS6-aR-DVy"/>
+        <segue reference="rA2-g1-YXM"/>
     </inferredMetricsTieBreakers>
 </document>

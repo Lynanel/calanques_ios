@@ -7,9 +7,21 @@
 //
 
 import UIKit
+import Foundation
 import MapKit
 
 class MonAnnotationView: MKAnnotationView {
+    
+    //Ajout de variables pour afficher les détails à partir de MonAnnotationView
+    var controller: ControllerAvecCarte?
+    
+    init(controller: ControllerAvecCarte, annotation: MKAnnotation?, reuseIdentifier: String?) {
+        self.controller = controller
+        super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
+        setupAnnotation()
+    }
+    
+    var calanques: [Calanque] = []
 
     override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
         super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
@@ -68,8 +80,10 @@ class MonAnnotationView: MKAnnotationView {
         return view
     }
     
+    
     @objc func detail() {
-        
+        guard let anno = annotation as? MonAnnotation else { return }
+        controller?.toDetail(calanque: anno.calanque)
     }
     
     @objc func gps(){

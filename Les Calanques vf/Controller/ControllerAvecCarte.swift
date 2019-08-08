@@ -49,7 +49,7 @@ class ControllerAvecCarte: UIViewController, MKMapViewDelegate, CLLocationManage
     
     //Fonction carte à centrer
     func setupMap(coordonnees: CLLocationCoordinate2D){
-        let span = MKCoordinateSpan(latitudeDelta: 4, longitudeDelta: 4)
+        let span = MKCoordinateSpan(latitudeDelta: 2, longitudeDelta: 2)
         let region = MKCoordinateRegion(center: coordonnees, span: span)
         mapView.setRegion(region, animated: true)
     }

@@ -9,26 +9,47 @@
 import UIKit
 import MapKit
 
-class ControllerAvecCarte: UIViewController, MKMapViewDelegate {
+class ControllerAvecCarte: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     var calanques: [Calanque] = CalanqueCollection().all()
     
+    var locationManager = CLLocationManager()
+    var userPosition: CLLocation?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
+        
+        //LOcalisation de la position par defaut de l'utilisateur
+        mapView.showsUserLocation = true
+        locationManager.delegate = self
+        locationManager.requestAlwaysAuthorization()
+        locationManager.startUpdatingLocation()
+        
         addAnnotations()
 
         NotificationCenter.default.addObserver(self, selector: #selector(notifDetail), name: Notification.Name("detail"), object: nil)
         
+        //Centrer l'affichage des images sur la carte
         if calanques.count > 5 {
             let premiere = calanques[5].coordonnee
             setupMap(coordonnees: premiere)
         }
     }
+    //Recupérer la position de l'utilisateur
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if locations.count > 0 {
+            if let maPosition = locations.last {
+                userPosition = maPosition
+            }
+        }
+    }
     
+    
+    //Fonction carte à centrer
     func setupMap(coordonnees: CLLocationCoordinate2D){
-        let span = MKCoordinateSpan(latitudeDelta: 0.35, longitudeDelta: 0.35)
+        let span = MKCoordinateSpan(latitudeDelta: 4, longitudeDelta: 4)
         let region = MKCoordinateRegion(center: coordonnees, span: span)
         mapView.setRegion(region, animated: true)
     }
@@ -94,7 +115,9 @@ class ControllerAvecCarte: UIViewController, MKMapViewDelegate {
     }
 
     @IBAction func getPosition(_ sender: Any) {
-        
+        if userPosition != nil {
+            setupMap(coordonnees: userPosition!.coordinate)
+        }
     }
     
     @IBAction func segementedChanged(_ sender: UISegmentedControl) {

@@ -22,26 +22,17 @@ class DetailController: UIViewController {
         
         let mutable = NSMutableAttributedString(string: calanque.nom + "\n \n", attributes: [
             .foregroundColor: UIColor.red,
-            .font: UIFont.boldSystemFont(ofSize: 20)
+            .font: UIFont.boldSystemFont(ofSize: 18)
             ])
+        
         mutable.append(NSAttributedString(
             string: calanque.desc,
             attributes: [
-                .font: UIFont.systemFont(ofSize: 12),
+                .font: UIFont.systemFont(ofSize: 28),
                 .foregroundColor: UIColor.darkGray
             ]))
+        
         nomEtDesc.attributedText = mutable
         nomEtDesc.textAlignment = .center
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

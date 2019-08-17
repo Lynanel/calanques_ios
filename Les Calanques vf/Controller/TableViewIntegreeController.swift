@@ -7,7 +7,9 @@
 //
 
 import UIKit
+//let segueId = "Other"
 let segueId = "Detail"
+
 class TableViewIntegreeController: UITableViewController {
 
     var calanques: [Calanque] = []
@@ -51,7 +53,7 @@ class TableViewIntegreeController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 125
+        return 200
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -82,7 +84,7 @@ class TableViewIntegreeController: UITableViewController {
             calanques.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
-            print("je pourrai éventuellement ajouter un élément")
+            print("Je pourrai éventuellement ajouter un élément")
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
